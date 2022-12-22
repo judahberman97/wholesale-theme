@@ -1,0 +1,203 @@
+{%- liquid
+  comment
+    Translations
+  endcomment
+
+  assign search_t = 'general.search.search' | t
+  assign cart_title_t = 'cart.title' | t
+
+  comment
+    Variables
+  endcomment
+
+  assign menu = section.settings.menu
+  assign logo = section.settings.logo
+  assign logo_height = section.settings.logo-height-range
+  assign show_search = settings.search--show-in-header
+  assign cart_type = settings.cart--type
+-%}
+
+<header
+  class="header--root"
+  data-section-id="{{ section.id }}"
+  data-section-type="header"
+  data-js-class="Header"
+  {% if logo and logo_height <= 45 %}
+    data-header-logo-type="inline"
+  {% elsif logo %}
+    data-header-logo-type="overflowing"
+  {% endif %}
+>
+  <noscript>
+    <div class="header--container">
+      <div class="header--left-side">
+        {% comment %}
+        {% if request.page_type == 'index' %}
+          <h1 class="header--logo">
+            {%
+              render 'logo',
+              logo: logo,
+              height_range: logo_height
+            %}
+          </h1>
+        {% else %}
+          <div class="header--logo">
+            {%
+              render 'logo',
+              logo: logo,
+              height_range: logo_height
+            %}
+          </div>
+        {% endif %}
+        {% endcomment %}
+        
+        <div class="header--logo">
+          {%
+              render 'logo',
+          logo: logo,
+          height_range: logo_height
+          %}
+        </div>
+
+		{%
+          render 'x-menu',
+          js_class: 'XMenu',
+          overlap_parent: 1,
+          off_canvas: 'right-sidebar',
+          handle: menu
+        %}
+      </div>
+      <div class="header--right-side" data-item="nav-text">
+        {% if show_search %}
+          <div class="header--search">
+            <a href="{{ routes.search_url }}">{{ search_t }}</a>
+          </div>
+        {% endif %}
+
+        {% render 'login' %}
+
+        <div class="cart-link" data-item="nav-text">
+          <a href="{{ routes.cart_url }}">{{ cart_title_t }}</a>
+        </div>
+      </div>
+    </div>
+  </noscript>
+
+  <div class="header--y-menu-for-off-canvas" style="display:none;">
+    {% render 'y-menu', handle: menu %}
+  </div>
+
+  <div class="header--container">
+    <div class="header--left-side">
+      {% if request.page_type == 'index' %}
+        <h1 class="header--logo">
+          {%
+            render 'logo',
+            logo: logo,
+            height_range: logo_height
+          %}
+        </h1>
+      {% else %}
+        <div class="header--logo">
+          {%
+            render 'logo',
+            logo: logo,
+            height_range: logo_height
+          %}
+        </div>
+      {% endif %}
+      {%
+        render 'x-menu',
+        js_class: 'XMenu',
+        overlap_parent: 1,
+        off_canvas: 'right-sidebar',
+        handle: menu
+      %}
+    </div>
+
+    <div class="header--right-side" data-item="nav-text">
+      {% if show_search %}
+        <div class="header--search">
+          <a href="{{ routes.search_url }}">{{ search_t }}</a>
+        </div>
+      {% endif %}
+
+      {% render 'login' %}
+      {% render 'popup', component: 'link' %}
+
+      <div class="cart-link">
+        <a
+          {% if cart_type == 'drawer' %}
+            data-off-canvas--open="right-sidebar"
+            data-off-canvas--view="cart"
+            aria-haspopup="menu"
+            href="#"
+          {% else %}
+            href="{{ routes.cart_url }}"
+          {% endif %}
+        >
+          {{ cart_title_t }}&nbsp;
+          <span class="header--cart-number" data-item-count="{{ cart.item_count }}">
+          (<span class="cart--external--total-items">{{ cart.item_count }}</span>)
+          </span>
+        </a>
+      </div>
+
+      <a
+        class="header--cart-count"
+        data-item="nav-text"
+        {% if cart_type == 'drawer' %}
+          data-off-canvas--open="right-sidebar"
+          data-off-canvas--view="cart"
+          aria-haspopup="menu"
+          href="#"
+        {% else %}
+          href="{{ routes.cart_url }}"
+        {% endif %}
+      >
+        <span class="cart--external--total-items">
+          {{ cart.item_count }}
+        </span>
+      </a>
+
+      <div
+        tabindex="0"
+        data-off-canvas--open="left-sidebar"
+        aria-haspopup="menu"
+      >
+        {% render 'icons', icon: 'menu' %}
+      </div>
+    </div>
+  </div>
+
+</header>
+
+{% schema %}
+{
+  "name": "Header",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo image"
+    },
+    {
+      "label": "Custom logo height",
+      "id": "logo-height-range",
+      "type": "range",
+      "min": 15,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 35,
+      "info": "This is referring to the natural height and should be half the height of the image you uploaded to ensure it stays sharp on retina screens."
+    },
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Menu",
+      "default": "main-menu"
+    }
+  ]
+}
+{% endschema %}

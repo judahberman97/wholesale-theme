@@ -1,0 +1,176 @@
+{
+  "sections": {
+    "1644538756d6cadf2a": {
+      "type": "image-with-text",
+      "settings": {
+        "text-color": "auto",
+        "background-color": "none",
+        "container-width": 6,
+        "spacing-above": false,
+        "spacing-below": false,
+        "image-height": 3,
+        "darken-image": false,
+        "parallax-enabled": false,
+        "text-position": "left",
+        "text-width": "medium",
+        "overlap": false,
+        "box-around-text": false,
+        "mobile-overlay": false,
+        "image": "shopify:\/\/shop_images\/Destira-Dance-6538A-3.jpg",
+        "overline": "Dance Apparel",
+        "title": "Dance Leotards for Girls",
+        "description": "<p>Shop our collection of dance leotards for girls and adults for ballet, acro, jazz, tap, and more! High quality and trendy leotards for girls.<\/p>",
+        "link-url": "shopify:\/\/collections\/dance-leotards",
+        "link-text": "Shop Now"
+      }
+    },
+    "16445390223c8c14e0": {
+      "type": "featured-video",
+      "disabled": true,
+      "settings": {
+        "video-url": "https:\/\/youtu.be\/PYpyUF0oDmc",
+        "full-width": true,
+        "background-color": "none",
+        "section-height": "regular",
+        "light-text": true,
+        "darken-video": true,
+        "heading": "We can't wait to work with you!",
+        "sub-heading": "Hear why our gym partners enjoy working with us.",
+        "button-text": "Learn More",
+        "button-url": "https:\/\/youtu.be\/PYpyUF0oDmc"
+      }
+    },
+    "16491061802da94210": {
+      "type": "custom-content",
+      "disabled": true,
+      "settings": {
+        "custom_html": "<div><p>Some HTML content<\/p><\/div>"
+      }
+    },
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "show-title": true,
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 4,
+        "spacing-above": true,
+        "spacing-below": true
+      }
+    },
+    "1655503561e8d3f598": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "dance-leotards",
+        "background-color": "light",
+        "light-text": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "featured-collection--image--show": false,
+        "featured-collection--description--show": false,
+        "display-type": "slider",
+        "products-per-row--desktop": "4",
+        "products-per-row--mobile": "1"
+      }
+    },
+    "1655503739e2ad9380": {
+      "type": "grid-with-overlay",
+      "blocks": {
+        "16555037394d3a2dae-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Destira-Dance-8663-small.jpg",
+            "wide": true,
+            "tall": true,
+            "retain-ratio": false,
+            "title": "",
+            "link-url": "shopify:\/\/collections\/dance-leotards",
+            "link-text": ""
+          }
+        },
+        "16555037394d3a2dae-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Destira-Dance-8314-small.jpg",
+            "wide": true,
+            "tall": false,
+            "retain-ratio": false,
+            "title": "",
+            "link-url": "shopify:\/\/collections\/dance-leotards",
+            "link-text": ""
+          }
+        },
+        "16555037394d3a2dae-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Destira-Dance-6724-small.jpg",
+            "wide": false,
+            "tall": false,
+            "retain-ratio": false,
+            "title": "",
+            "link-url": "shopify:\/\/collections\/dance-leotards",
+            "link-text": ""
+          }
+        },
+        "16555037394d3a2dae-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Destira-Dance-7156-small.jpg",
+            "wide": false,
+            "tall": false,
+            "retain-ratio": false,
+            "title": "",
+            "link-url": "shopify:\/\/collections\/dance-leotards",
+            "link-text": ""
+          }
+        }
+      },
+      "block_order": [
+        "16555037394d3a2dae-0",
+        "16555037394d3a2dae-1",
+        "16555037394d3a2dae-2",
+        "16555037394d3a2dae-3"
+      ],
+      "settings": {
+        "text-style": "light-with-overlay",
+        "background-color": "none",
+        "spacing": true,
+        "mobile-overlay": true,
+        "container-width": 4,
+        "spacing-above": true,
+        "spacing-below": true,
+        "width": 4,
+        "mobile-width": "2",
+        "heading": "",
+        "subtitle": "",
+        "link-url": "",
+        "link-text": ""
+      }
+    },
+    "165550360903c65f15": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "bottoms",
+        "background-color": "dark",
+        "light-text": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "featured-collection--image--show": false,
+        "featured-collection--description--show": false,
+        "display-type": "slider",
+        "products-per-row--desktop": "3",
+        "products-per-row--mobile": "2"
+      }
+    }
+  },
+  "order": [
+    "1644538756d6cadf2a",
+    "16445390223c8c14e0",
+    "16491061802da94210",
+    "main",
+    "1655503561e8d3f598",
+    "1655503739e2ad9380",
+    "165550360903c65f15"
+  ]
+}

@@ -1,0 +1,230 @@
+{
+  "sections": {
+    "main": {
+      "type": "product",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+          }
+        },
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "bd5856b1-69e5-476b-b202-aaefdc912e03": {
+          "type": "rating",
+          "settings": {
+          }
+        },
+        "8295874e-2c61-4cc2-ad82-dcf0a98a06b0": {
+          "type": "quantity-input",
+          "settings": {
+          }
+        },
+        "options": {
+          "type": "options",
+          "settings": {
+            "variant-style": "buttons",
+            "swatches-enabled": true,
+            "size-chart-enabled": true,
+            "size-chart-option": "size",
+            "size-chart-content": "size-chart"
+          }
+        },
+        "f64d0e21-7ce7-4ff3-9925-e735d38007fe": {
+          "type": "low-stock",
+          "settings": {
+            "threshold": 5
+          }
+        },
+        "88a6de82-e60d-45fe-8c57-84279173a447": {
+          "type": "unavailable-form",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "buy-buttons": {
+          "type": "buy-buttons",
+          "settings": {
+            "smart-payment-enabled": false
+          }
+        },
+        "pickup": {
+          "type": "pickup",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "divider": {
+          "type": "divider",
+          "settings": {
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "vendor",
+        "price",
+        "bd5856b1-69e5-476b-b202-aaefdc912e03",
+        "8295874e-2c61-4cc2-ad82-dcf0a98a06b0",
+        "options",
+        "f64d0e21-7ce7-4ff3-9925-e735d38007fe",
+        "88a6de82-e60d-45fe-8c57-84279173a447",
+        "buy-buttons",
+        "pickup",
+        "divider",
+        "description"
+      ],
+      "settings": {
+        "modal-enabled": true,
+        "hide-variant-media": true,
+        "loop-enabled": false
+      }
+    },
+    "1645032594ab0df675": {
+      "type": "apps",
+      "blocks": {
+        "303cc9f5-de90-4150-a7b8-aa5a31d7c3fd": {
+          "type": "shopify:\/\/apps\/bundler-product-bundles\/blocks\/bundler-target-element\/7a6ae1b8-3b16-449b-8429-8bb89a62c664",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "303cc9f5-de90-4150-a7b8-aa5a31d7c3fd"
+      ],
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 4,
+        "spacing-above": true,
+        "spacing-below": true
+      }
+    },
+    "social-sharing": {
+      "type": "product-social",
+      "settings": {
+        "enable-social": false,
+        "spacing-above": false,
+        "spacing-below": false
+      }
+    },
+    "reviews": {
+      "type": "reviews",
+      "settings": {
+      }
+    },
+    "16498011267b8f17d8": {
+      "type": "collapsible-tabs",
+      "disabled": true,
+      "blocks": {
+        "1649801126a077a8b7-0": {
+          "type": "collapsible-tab",
+          "settings": {
+            "heading": "Size Chart",
+            "description": "<p>TESTING<\/p>",
+            "page-content": ""
+          }
+        },
+        "1649801126a077a8b7-1": {
+          "type": "collapsible-tab",
+          "settings": {
+            "heading": "Collapsible tab",
+            "description": "<p>Use tabs to highlight unique features, sizing information, or other sales information.<\/p>",
+            "page-content": ""
+          }
+        },
+        "1649801126a077a8b7-2": {
+          "type": "collapsible-tab",
+          "settings": {
+            "heading": "Collapsible tab",
+            "description": "<p>Use tabs to highlight unique features, sizing information, or other sales information.<\/p>",
+            "page-content": ""
+          }
+        }
+      },
+      "block_order": [
+        "1649801126a077a8b7-0",
+        "1649801126a077a8b7-1",
+        "1649801126a077a8b7-2"
+      ],
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "heading": "",
+        "title-alignment": "left",
+        "container-width": 1,
+        "spacing-above": false,
+        "spacing-below": true
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "show": true,
+        "title": "You may also like",
+        "container-width": 4,
+        "spacing-above": true,
+        "spacing-below": true
+      }
+    },
+    "1644542774862b1be3": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "gymnastics-gift-sets",
+        "background-color": "light",
+        "light-text": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "featured-collection--image--show": false,
+        "featured-collection--description--show": false,
+        "display-type": "slider",
+        "products-per-row--desktop": "4",
+        "products-per-row--mobile": "2"
+      }
+    },
+    "16450328442589da5f": {
+      "type": "apps",
+      "blocks": {
+        "99d4efc2-e4a3-4d3c-bb85-06831eb9214e": {
+          "type": "shopify:\/\/apps\/bundler-product-bundles\/blocks\/bundler-target-element\/7a6ae1b8-3b16-449b-8429-8bb89a62c664",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "99d4efc2-e4a3-4d3c-bb85-06831eb9214e"
+      ],
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 4,
+        "spacing-above": true,
+        "spacing-below": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1645032594ab0df675",
+    "social-sharing",
+    "reviews",
+    "16498011267b8f17d8",
+    "recommendations",
+    "1644542774862b1be3",
+    "16450328442589da5f"
+  ]
+}

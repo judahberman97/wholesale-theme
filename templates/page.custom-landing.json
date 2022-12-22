@@ -1,0 +1,124 @@
+{
+  "sections": {
+    "1644538756d6cadf2a": {
+      "type": "image-with-text",
+      "settings": {
+        "text-color": "auto",
+        "background-color": "none",
+        "container-width": 6,
+        "spacing-above": false,
+        "spacing-below": false,
+        "image-height": 3,
+        "darken-image": false,
+        "parallax-enabled": false,
+        "text-position": "left",
+        "text-width": "medium",
+        "overlap": false,
+        "box-around-text": false,
+        "mobile-overlay": false,
+        "image": "shopify:\/\/shop_images\/Destira-289.jpg",
+        "overline": "Destira Custom Leotards",
+        "title": "Custom Apparel for your Group",
+        "description": "<p>Looking to create custom team or group apparel? We've got you covered! At Destira, we make the design process for our custom leotards fun and simple. If you can dream it, we can design it! Look at our custom design programs below to choose the best one for you. With our pre-sale orders, we handle the collection, consolidation, shipping, and fulfillment of your custom-printed leotards. Our other option is to place a bulk order, and our amazing experts help you through the design, creation, and shipping processes for your custom-made leotards. Get started today on your custom leotards for your team, group, or event, and bring your idea to life!<\/p>",
+        "link-url": "shopify:\/\/pages\/contact-request",
+        "link-text": "Get Started"
+      }
+    },
+    "16445390223c8c14e0": {
+      "type": "featured-video",
+      "disabled": true,
+      "settings": {
+        "video-url": "https:\/\/youtu.be\/PYpyUF0oDmc",
+        "full-width": true,
+        "background-color": "none",
+        "section-height": "regular",
+        "light-text": true,
+        "darken-video": true,
+        "heading": "We can't wait to work with you!",
+        "sub-heading": "Hear why our gym partners enjoy working with us.",
+        "button-text": "Learn More",
+        "button-url": "https:\/\/youtu.be\/PYpyUF0oDmc"
+      }
+    },
+    "16491061802da94210": {
+      "type": "custom-content",
+      "disabled": true,
+      "settings": {
+        "custom_html": "<div><p>Some HTML content<\/p><\/div>"
+      }
+    },
+    "1649106522b94c72bb": {
+      "type": "text-columns",
+      "blocks": {
+        "1649106522fe369484-0": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify:\/\/shop_images\/Image20220216103502.jpg",
+            "title": "CUSTOM PRE-SALE",
+            "description": "<p>When you opt for a pre-sale of your Destira custom leotard hosted on Destira.com, you let us handle the collection and fulfilling of orders, freeing up your time and some extra brainspace too.<\/p>",
+            "link-url": "https:\/\/destira.com\/pages\/custom-presale-info-page",
+            "link-text": "<b>Learn More<\/b>"
+          }
+        },
+        "1649106522fe369484-1": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify:\/\/shop_images\/Salto-Invite-Optionals-2019.jpg",
+            "title": "CUSTOM BULK ORDER",
+            "description": "<p>Our in-house custom design team are <em>geniuses<\/em>, let me tell you, and if you can dream it, we’d love to turn it into a leo for you! The possibilities are endless. Contact us to get started.<\/p>",
+            "link-url": "https:\/\/destira.com\/pages\/custom-apparel-faqs",
+            "link-text": "<b>Learn More<\/b>"
+          }
+        }
+      },
+      "block_order": [
+        "1649106522fe369484-0",
+        "1649106522fe369484-1"
+      ],
+      "settings": {
+        "background-color": "light",
+        "light-text": false,
+        "block-spacing": true,
+        "container-width": 3,
+        "spacing-above": true,
+        "spacing-below": true,
+        "width": 2,
+        "image-width": 0,
+        "mobile-width": "1",
+        "text-alignment": "center",
+        "heading": "Custom Design Programs",
+        "subtitle": "Choose from two ways to order for your group or event.",
+        "link-url": "",
+        "link-text": ""
+      }
+    },
+    "16491069386c197060": {
+      "type": "custom-content",
+      "settings": {
+        "custom_html": "<center><button onclick=\"https:\/\/destira.com\/pages\/contact-request\"><b>GET STARTED!<\/b><\/button><\/center>"
+      }
+    },
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "show-title": true,
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 4,
+        "spacing-above": true,
+        "spacing-below": true
+      }
+    }
+  },
+  "order": [
+    "1644538756d6cadf2a",
+    "16445390223c8c14e0",
+    "16491061802da94210",
+    "1649106522b94c72bb",
+    "16491069386c197060",
+    "main"
+  ]
+}

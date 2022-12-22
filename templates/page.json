@@ -1,0 +1,61 @@
+{
+  "sections": {
+    "1644538756d6cadf2a": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "text-color": "auto",
+        "background-color": "none",
+        "container-width": 6,
+        "spacing-above": false,
+        "spacing-below": false,
+        "image-height": 3,
+        "darken-image": true,
+        "parallax-enabled": false,
+        "text-position": "left",
+        "text-width": "medium",
+        "overlap": false,
+        "box-around-text": false,
+        "mobile-overlay": true,
+        "image": "shopify:\/\/shop_images\/2021-12-homepage-banner-newyear.jpg",
+        "overline": "Destira for Business",
+        "title": "Maximize your Pro-Shop Sales",
+        "description": "<p>Destira for Business offers FIVE interrelated programs to meet your unique needs, each with its greatest benefit. Tell us about your business and we’ll create a personalized service package just for you. We’ll do what we do best, so you can get back to doing what you do best.<\/p>",
+        "link-url": "shopify:\/\/pages\/contact-request",
+        "link-text": "Get Started"
+      }
+    },
+    "main": {
+      "type": "page",
+      "settings": {
+        "show-title": true,
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 4,
+        "spacing-above": true,
+        "spacing-below": true
+      }
+    },
+    "16445390223c8c14e0": {
+      "type": "featured-video",
+      "disabled": true,
+      "settings": {
+        "video-url": "https:\/\/youtu.be\/PYpyUF0oDmc",
+        "full-width": true,
+        "background-color": "none",
+        "section-height": "regular",
+        "light-text": true,
+        "darken-video": true,
+        "heading": "We can't wait to work with you!",
+        "sub-heading": "Hear why our gym partners enjoy working with us.",
+        "button-text": "Learn More",
+        "button-url": "https:\/\/youtu.be\/PYpyUF0oDmc"
+      }
+    }
+  },
+  "order": [
+    "1644538756d6cadf2a",
+    "main",
+    "16445390223c8c14e0"
+  ]
+}

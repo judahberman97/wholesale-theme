@@ -1,0 +1,21 @@
+{% assign banner = section.settings.checkout_banner   %}
+<img src="{{ banner | img_url : 'master' }}" allt="{{ banner.alt }}" loading="lazy" />
+{% schema %}
+  {
+    "name": "Checkout banner",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "checkout_banner",
+        "label": "Image"
+      }
+      
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

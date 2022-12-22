@@ -1,0 +1,309 @@
+{
+  "sections": {
+    "1632438205dcd4c52e": {
+      "type": "image-with-text",
+      "settings": {
+        "text-color": "dark",
+        "background-color": "none",
+        "container-width": 5,
+        "spacing-above": false,
+        "spacing-below": true,
+        "image-height": 3,
+        "darken-image": false,
+        "parallax-enabled": false,
+        "text-position": "center",
+        "text-width": "large",
+        "overlap": false,
+        "box-around-text": false,
+        "mobile-overlay": false,
+        "image": "shopify:\/\/shop_images\/2022-10-banner-page-BFCM_3e24bdbe-65e3-4179-8d27-004768fff72c.jpg",
+        "overline": "",
+        "title": "{{ page.title }}",
+        "description": "",
+        "link-url": "",
+        "link-text": ""
+      }
+    },
+    "main": {
+      "type": "page",
+      "settings": {
+        "show-title": false,
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 3,
+        "spacing-above": false,
+        "spacing-below": false
+      }
+    },
+    "163243822008cc1cdd": {
+      "type": "grid-with-overlay",
+      "blocks": {
+        "163243822008cc1cdd-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2021-10-insta-post-holiday-12.jpg",
+            "wide": false,
+            "tall": false,
+            "retain-ratio": false,
+            "title": "HOLIDAY",
+            "link-url": "shopify:\/\/collections\/holiday-leotards",
+            "link-text": "shop"
+          }
+        },
+        "dd134221-c067-4343-8329-87a55375741b": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2022-10-social-post-sparkle-group-2.jpg",
+            "wide": true,
+            "tall": false,
+            "retain-ratio": true,
+            "title": "SHINE BRIGHT",
+            "link-url": "shopify:\/\/collections\/sparkle",
+            "link-text": "shop"
+          }
+        },
+        "1cffdf4d-d46c-4371-87ae-e5691c9d06ff": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2022-10-social-post-ohsugar-group-1.jpg",
+            "wide": false,
+            "tall": false,
+            "retain-ratio": true,
+            "title": "OH SUGAR",
+            "link-url": "shopify:\/\/collections\/oh-sugar",
+            "link-text": "shop"
+          }
+        },
+        "163243822008cc1cdd-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2022-10-social-post-aspire-1.jpg",
+            "wide": false,
+            "tall": false,
+            "retain-ratio": true,
+            "title": "POWER UP",
+            "link-url": "shopify:\/\/collections\/power-up",
+            "link-text": "SHOP"
+          }
+        },
+        "163243822008cc1cdd-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2022-10-social-post-wonderland-duo-1.jpg",
+            "wide": false,
+            "tall": false,
+            "retain-ratio": true,
+            "title": "WONDERLAND",
+            "link-url": "shopify:\/\/collections\/wonderland",
+            "link-text": "SHOP"
+          }
+        },
+        "163243822008cc1cdd-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2022-11-social-post-gemstone-duo-1.jpg",
+            "wide": true,
+            "tall": true,
+            "retain-ratio": true,
+            "title": "GEM•STONE",
+            "link-url": "shopify:\/\/collections\/gem-stone",
+            "link-text": "shop"
+          }
+        },
+        "913775ee-4352-4900-92fb-411a7ae0a303": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2022-09-social-post-camo-duo-1.jpg",
+            "wide": false,
+            "tall": false,
+            "retain-ratio": true,
+            "title": "CAMOUFLAGE",
+            "link-url": "shopify:\/\/collections\/confident-in-camo",
+            "link-text": "SHOP"
+          }
+        },
+        "8cdbfb93-fdcf-4331-b22b-2763f0ab82f9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2022-11-social-post-makemagic-group-2.jpg",
+            "wide": false,
+            "tall": false,
+            "retain-ratio": true,
+            "title": "MAKE MAGIC",
+            "link-url": "shopify:\/\/collections\/make-magic",
+            "link-text": "shop"
+          }
+        },
+        "829a7e53-6bc6-4f66-ad58-b4dafb4b2788": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "wide": true,
+            "tall": false,
+            "retain-ratio": true,
+            "title": "Grid image",
+            "link-url": "",
+            "link-text": "View more"
+          }
+        }
+      },
+      "block_order": [
+        "163243822008cc1cdd-1",
+        "dd134221-c067-4343-8329-87a55375741b",
+        "1cffdf4d-d46c-4371-87ae-e5691c9d06ff",
+        "163243822008cc1cdd-3",
+        "163243822008cc1cdd-2",
+        "163243822008cc1cdd-0",
+        "913775ee-4352-4900-92fb-411a7ae0a303",
+        "8cdbfb93-fdcf-4331-b22b-2763f0ab82f9",
+        "829a7e53-6bc6-4f66-ad58-b4dafb4b2788"
+      ],
+      "settings": {
+        "text-style": "box",
+        "background-color": "none",
+        "spacing": true,
+        "mobile-overlay": false,
+        "container-width": 3,
+        "spacing-above": true,
+        "spacing-below": true,
+        "width": 3,
+        "mobile-width": "2",
+        "heading": "",
+        "subtitle": "",
+        "link-url": "",
+        "link-text": ""
+      }
+    },
+    "16324391249e26ecb5": {
+      "type": "grid-with-overlay",
+      "blocks": {
+        "16324391249e26ecb5-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2022-08-social-post-freespirit-2.jpg",
+            "wide": false,
+            "tall": false,
+            "retain-ratio": false,
+            "title": "LEOTARDS",
+            "link-url": "shopify:\/\/collections\/leotard",
+            "link-text": "shop"
+          }
+        },
+        "6c0fb92c-56e2-441e-b79a-e60a15f5bc65": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2022-06-social-post-donutflipout-4.jpg",
+            "wide": false,
+            "tall": false,
+            "retain-ratio": false,
+            "title": "UNITARDS",
+            "link-url": "shopify:\/\/collections\/unitard",
+            "link-text": "shop"
+          }
+        },
+        "500ed3d8-fd44-49e3-9758-87ba315a2147": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2022-09-social-post-twinkletoes-1.jpg",
+            "wide": false,
+            "tall": false,
+            "retain-ratio": false,
+            "title": "DOLL LEOTARDS",
+            "link-url": "shopify:\/\/collections\/doll-leotards",
+            "link-text": "SHOP"
+          }
+        },
+        "f3333f16-444d-42c1-b7c2-e4217a99d14f": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2021-10-insta-post-ohsugar-cadreamin-1.jpg",
+            "wide": false,
+            "tall": false,
+            "retain-ratio": false,
+            "title": "GIFT SETS",
+            "link-url": "shopify:\/\/collections\/gymnastics-gift-sets",
+            "link-text": "SHOP"
+          }
+        },
+        "16324391249e26ecb5-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/OAQFtF6Q.jpg",
+            "wide": false,
+            "tall": false,
+            "retain-ratio": false,
+            "title": "SHORTS",
+            "link-url": "shopify:\/\/collections\/shorts",
+            "link-text": "shop"
+          }
+        },
+        "b369f0de-5026-48b5-b436-b0dec6b610a0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2022-03-social-post-beautifullines-skysthelimit-2.jpg",
+            "wide": false,
+            "tall": false,
+            "retain-ratio": false,
+            "title": "GRIP BAGS",
+            "link-url": "shopify:\/\/collections\/bags",
+            "link-text": "shop"
+          }
+        }
+      },
+      "block_order": [
+        "16324391249e26ecb5-0",
+        "6c0fb92c-56e2-441e-b79a-e60a15f5bc65",
+        "500ed3d8-fd44-49e3-9758-87ba315a2147",
+        "f3333f16-444d-42c1-b7c2-e4217a99d14f",
+        "16324391249e26ecb5-1",
+        "b369f0de-5026-48b5-b436-b0dec6b610a0"
+      ],
+      "settings": {
+        "text-style": "box",
+        "background-color": "none",
+        "spacing": false,
+        "mobile-overlay": false,
+        "container-width": 6,
+        "spacing-above": false,
+        "spacing-below": true,
+        "width": 3,
+        "mobile-width": "1",
+        "heading": "",
+        "subtitle": "",
+        "link-url": "",
+        "link-text": ""
+      }
+    },
+    "163247258812e2e14a": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "text-color": "auto",
+        "background-color": "none",
+        "container-width": 5,
+        "spacing-above": false,
+        "spacing-below": true,
+        "image-height": 3,
+        "darken-image": true,
+        "parallax-enabled": false,
+        "text-position": "center",
+        "text-width": "medium",
+        "overlap": false,
+        "box-around-text": false,
+        "mobile-overlay": true,
+        "overline": "Overline text",
+        "title": "Image with Text",
+        "description": "<p>Combine imagery with text to create stand-out campaign sections, eye-catching promotions, information blocks and more.<\/p>",
+        "link-url": "",
+        "link-text": ""
+      }
+    }
+  },
+  "order": [
+    "1632438205dcd4c52e",
+    "main",
+    "163243822008cc1cdd",
+    "16324391249e26ecb5",
+    "163247258812e2e14a"
+  ]
+}

@@ -1,0 +1,108 @@
+ {% unless customer.tags contains 'wholesale' %}
+<style>
+  .btn-add-cart{
+        padding: 10px;
+    margin-top: 10px;
+    background: #000;
+  }
+</style>
+<script>
+
+(function($) {
+  $(document).on("page:load page:change", function() {
+    const productHandle = "{{ section.settings.product }}"
+    const title = "{{ section.settings.title }}"
+    const description = "{{ section.settings.description }}"
+    const coupon = "{{ section.settings.coupon }}"
+    function renderProduct(product) {
+  return `<tr class="product" data-product-id="${
+    product.id
+  }" data-variant-id="${product.variants[0].id}" data-product-type="${
+    product.type
+  }"
+  data-customer-ready-visible="">
+  <td class="product__image">
+      <div class="product-thumbnail ">
+          <div class="product-thumbnail__wrapper">
+              <img alt="One of a Kind Leotard - Child XXS (3x)" class="product-thumbnail__image"
+                  src="${product.featured_image}">
+          </div>
+      </div>
+
+  </td>
+  <th class="product__description" scope="row" style="padding-top:20px">
+      <span class="product__description__name order-summary__emphasis">${title}</span>
+      <span class="product__description__variant order-summary__small-text">${description}</span>
+      <button type="button" class="btn btn-add-cart" data-variant="${
+        product.variants[0].id
+      }"><span class="btn__content"> Add for <span class="price" >${
+    formatMoney(product.variants[0].price)
+  }</span></span><svg class="icon-svg icon-svg--size-18 btn__spinner icon-svg--spinner-button" aria-hidden="true" focusable="false"> <use xlink:href="#spinner-button"></use> </svg>
+  </button></div>
+  </th>
+  <td class="product__quantity">
+  
+  </td>
+  <td class="product__price">
+   
+  </td>
+</tr>`;
+}
+    function addToCart(){
+     let variantId =  $(this).data('variant')
+        $(this).attr('disabled', true)
+      if(coupon){
+        location.href = `/checkout?updates[${variantId}]=1&discount=${coupon}`
+      }else{
+      location.href = `/checkout?updates[${variantId}]=1`
+      }
+    
+    }
+    fetch(`/products/${productHandle}.js`).then(response => response.json()).then(res=>{
+      if(!res && !res.id) return
+       let added = false
+      $('[data-product-id]').each(function(){
+        let id = $(this).attr('data-product-id')
+         if(res.id == id){
+           added = true
+         }
+        })
+ 
+      if(!added && res.available){
+      $('.product-table').append(renderProduct(res))
+        $('.btn-add-cart').click(addToCart)
+      }
+    })
+  
+  });
+})(Checkout.$);
+</script>
+   {% endunless %}
+{% schema %}
+  {
+    "name": "Upsell",
+    "settings": [
+      {
+        "type" : "product",
+        "id" : "product",
+        "label" : "Upsell Product"
+      },
+     {
+        "type" : "text",
+        "id" : "title",
+        "label" : "Title"
+      },
+      {
+        "type" : "richtext",
+        "id" : "description",
+        "label" : "Description"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,60 @@
+{% comment %}
+  Here's an example of a customization
+  You can paste this at the bottom of the page to see how it works
+
+  /* Author - Date - Customization */
+  /* E.g. Troop Themes - 12th November .... - Changed paragraph colors */
+  @media only screen and (max-width: 767px) { /* mobile */
+    body {
+      color: blue;
+    }
+  }
+
+  @media only screen and (min-width: 768px) { /* desktop */
+    body {
+      color: green;
+    }
+  }
+
+  /* Add your theme customizations below */
+{% endcomment %}
+
+.variant-sku{
+	display: block;
+	padding-top: 1rem;
+}
+
+.klaviyo-bis-trigger{
+	text-transform: uppercase;
+    background: var(--bg-color--button) !important;
+    padding: 1rem;
+	font-size: 13px;
+}
+
+.featured-grid--root[data-text-style=box] .featured-grid--item--text-background{
+	padding: 16px 0px;
+ 	background: rgba(255,255,255,0.75);
+}
+
+.featured-grid--item--title{
+	font-weight: bold;
+}
+
+.featured-content--link--container, .featured-grid--item--link-container{
+	padding: 0.75rem 1rem;
+	/*border: 2px solid;*/
+    background-color: var(--bg-color--button) !important;
+}
+
+.hc-tabs-wrapper__content {
+	font-size: var(--font--paragraph--size);
+	line-height: 1.25rem;
+}
+
+.hc-tabs-wrapper__content p, .hc-tabs-wrapper__content li{
+	margin-bottom: 0.75rem;
+}
+
+.hc-tabs-wrapper__content a{
+	text-decoration: underline;
+}

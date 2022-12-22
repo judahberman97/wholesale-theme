@@ -1,0 +1,274 @@
+<style>
+  .countdown-process{
+     margin-bottom: 20px;
+    margin-top: 20px
+  }
+  .countdown{
+    margin-bottom: 20px;
+    margin-top: 20px
+    
+    display : none;
+  }
+     .countdown p{
+       display : inline
+     }
+  .countdown-ctd {
+	display: inline-flex;
+	align-items: center;
+}
+.countdown-ctd > div:not(.countdown-ctd__colon) {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 42px;
+	height: 42px;
+	border-radius: 100%;
+	font-size: 14px;
+}
+.countdown-ctd__item {
+	border-radius: 3px;
+	text-align: center;
+	display: flex;
+	place-items: center;
+	place-content: center;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 20px;
+}
+/* .countdown-ctd__item + span {
+	font-size: 9px;
+	line-height: 1.4;
+} */
+.countdown-ctd__colon {
+	font-weight: bold;
+	font-size: 14px;
+	margin: auto 6px;
+}
+  .icon--root {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+  .icon--next {
+    display: inline-block;
+    height: 3px;
+    position: relative;
+    width: 10px;
+}
+  .icon--next div:first-child {
+    transform: translate3d(0,2px,0) rotate3d(0,0,1,-45deg) scale(.9);
+}
+  .icon--next div:nth-child(2) {
+    transform: translate3d(0,-2px,0) rotate3d(0,0,1,45deg) scale(.9);
+}
+  .icon--next div:last-child {
+    width: 10px;
+    transform: rotate3d(0,1,0,90deg) scale(.9);
+    opacity: 0;
+}
+  .icon--next div {
+    height: 2px;
+    left: 0;
+    margin: auto;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform-origin: center;
+    width: 7px;
+    background: #1878b9;
+}
+</style>
+
+<div class="countdown">
+  <h3>
+    {{ section.settings.title }}
+  </h3>
+  <p>
+  {{ section.settings.description }}
+  </p>
+  <span class="countdown__timer"></span>
+</div>
+<p class="countdown-process">
+  
+</p>
+
+<script>
+ 
+(function($) {
+   let timerSettings = {
+    duration : "{{ section.settings.duration }}",
+    total : "{{ section.settings.total }}",
+    countdownMessage: "{{ section.settings.countdown_message }}"
+  }
+  let countdownStorage = JSON.parse(localStorage.getItem('checkout_countdown'))
+  function getCartTotal(){
+   let total =  +$('[data-checkout-subtotal-price-target]').attr('data-checkout-subtotal-price-target')
+    
+    if(!$('[data-checkout-subtotal-price-target]').length){
+    total =  +$('[data-checkout-payment-due-target]').attr('data-checkout-payment-due-target')
+    }
+    return total / 100
+  }
+  function countdown() {
+    let configTotal = +timerSettings.total || 0;
+    let total  = getCartTotal()
+    console.log(total)
+    if(!configTotal || configTotal > total ){
+       $(`.countdown`).hide()
+      if(configTotal > total){
+        const addMoney = configTotal - total
+        
+        $('.countdown-process').html(`${timerSettings.countdownMessage.replace('[money]',formatMoney(addMoney*100) )} 
+        <a class="contdown-continue" href="{{ section.settings.continue_shopping_url }}">
+  {{ section.settings.continue_shopping_text }}
+<div class="icon--root icon--next">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  
+</a>
+        `)
+        
+      $(`.countdown-process`).show()
+      }
+      localStorage.removeItem('checkout_countdown')
+      return
+    }
+	Date.prototype.addDays = function (days) {
+		var date = new Date(this.valueOf());
+		date.setDate(date.getDate() + days);
+		return date;
+	}
+	Date.prototype.addHours = function (hours) {
+		this.setTime(this.getTime() + ((hours) * 60 * 60 * 1000));
+		return this;
+	}
+    Date.prototype.addMinutes = function (minutes) {
+		this.setTime(this.getTime() + ((minutes) * 60 * 1000));
+		return this;
+	}
+	const getDays = (times) => Math.floor((times / (1000 * 60 * 60 * 24)))
+	const getHours = (times) => Math.floor((times % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	const getMinutes = (times) => Math.floor((times % (1000 * 60 * 60)) / (1000 * 60));
+	const getSeconds = (times) => Math.floor((times % (1000 * 60)) / 1000);
+    function renderCountDown(distance) {
+		// Time loop from settings
+		let html = [];
+		let days = getDays(distance)
+		let hours = getHours(distance)
+		let minutes = `<span class="countdown-ctd__item  countdown-ctd__m">${getMinutes(distance) >= 10 ? getMinutes(distance) : `0${getMinutes(distance)}`}</span>`
+		let seconds = `<span class="countdown-ctd__item countdown-ctd__s">${getSeconds(distance) >= 10 ? getSeconds(distance) : `0${getSeconds(distance)}`}</span>`
+		html = [ minutes, seconds]
+		if (hours > 0) html.unshift(`<span class="countdown-ctd__item countdown-ctd__d">${hours >= 10 ? hours : `0${hours}`}</span>`)
+		return `<div class="countdown-ctd">
+${html.join(`:`)}
+</div>`;
+	}
+    function calcCountDown(startTime, endTime) {
+		let distance = 0
+		let now = new Date().getTime()
+		if (now >= startTime && now <= endTime) {
+			distance = (endTime - now);
+			return distance
+		}
+		return distance
+	}
+    let distance = 0, startTime, endTime;
+    let duration = timerSettings.duration;
+    if(duration){
+    startTime = new Date().getTime()
+    endTime = new Date(startTime).addMinutes(duration)
+    if(countdownStorage){
+      let storageTime = new Date(countdownStorage.endTime).getTime()
+       endTime =   storageTime > startTime &&  countdownStorage.total  && countdownStorage.total <= total &&
+      countdownStorage.token == Shopify.Checkout.token && !Shopify.designMode  ? storageTime : endTime;
+      
+    }
+    countdownStorage = {
+      token:  Shopify.Checkout.token,
+      endTime: endTime,
+      total : total
+    }
+      localStorage.setItem('checkout_countdown', JSON.stringify(countdownStorage))
+      
+      distance = calcCountDown(startTime, endTime);
+      if(distance > 0){
+       $(`.countdown`).show()
+       $(`.countdown-process`).hide()  			
+        setInterval(function () {
+        distance = calcCountDown(startTime, endTime);
+			$(`.countdown__timer`).html(renderCountDown(distance))
+		}, 1000)
+      }else{
+        $(`.countdown`).hide()
+         $(`.countdown-process`).hide()
+        localStorage.removeItem('checkout_countdown')
+      }
+    }
+}
+  $(document).on("page:load page:change", function(){
+   if(Shopify.Checkout.step !== 'processing' && Shopify.Checkout.step !== 'review'){
+        countdown()
+   }
+  
+  }) })(Checkout.$);
+</script>
+
+{% schema %}
+  {
+    "name": "Countdown",
+    "settings": [
+      {
+        "type" : "text",
+        "label" : "Order total",
+        "id" : "total",
+        "default" : "40"
+      },
+      {
+        "type" : "text",
+        "label" : "Duration (minutes)",
+        "id" : "duration",
+        "default": "15",
+        "info": "default: 15 (minutes)"
+      },
+      {
+        "type" : "text",
+        "label" : "Title",
+        "id" : "title"
+      },
+       {
+        "type" : "richtext",
+        "label" : "Description",
+        "id" : "description"
+      },
+       {
+        "type" : "richtext",
+        "label" : "Message",
+        "id" : "countdown_message",
+         "default": "<p>Add [money] to your cart for FREE Shipping</p>",
+         "info": "Default: Add [money] to your cart for FREE Shipping"
+      },
+       {
+        "type" : "text",
+        "label" : "Continue shopping text",
+        "id" : "continue_shopping_text",
+         "default" : "Continue shopping"
+      },
+       {
+        "type" : "url",
+        "label" : "Continue shopping url",
+        "id" : "continue_shopping_url",
+         "default": "/collections/all"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,342 @@
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "e57b25a0-207d-4b30-b1d3-afc1bd6d1001": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2022-10-homepage-holiday.jpg",
+            "text-position": "bottom-left",
+            "text-width": "small",
+            "overline": "NEW ARRIVALS",
+            "title": "Hello Holidays!",
+            "description": "<p>Shop for the perfect gymnast gifts this holiday season including limited edition styles we know you'll love.<\/p>",
+            "link-url": "shopify:\/\/collections\/all",
+            "link-text": "SHOP NOW"
+          }
+        },
+        "b1b2c430-5d5e-4f43-9b66-d412c18a19ae": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2022-07-homepage-oneofakind.jpg",
+            "text-position": "bottom-left",
+            "text-width": "medium",
+            "overline": "",
+            "title": "You + Us = Impact",
+            "description": "<p>In collaboration with gymnasts just like you, we’ve designed this limited edition leotard to celebrate the unique story of every gymnast. Join us in celebrating the uniqueness of each us with our One of a Kind leotard. 100% of profits are donated to our Non-profit partner, Girls Leadership.<\/p>",
+            "link-url": "shopify:\/\/collections\/destira-girls-leadership",
+            "link-text": "SHOP NOW"
+          }
+        },
+        "116a9acb-454d-422c-aff8-7e94b32342c3": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2022-10-homepage-ohsugar.jpg",
+            "text-position": "center",
+            "text-width": "small",
+            "overline": "NEW ARRIVALS",
+            "title": "Oh, Sugar!",
+            "description": "<p>These are the perfect gymnastics leotards for any practice! Designed to make you feel great as you learn your newest skill.<\/p>",
+            "link-url": "shopify:\/\/collections\/oh-sugar",
+            "link-text": "SHOP NOW"
+          }
+        }
+      },
+      "block_order": [
+        "e57b25a0-207d-4b30-b1d3-afc1bd6d1001",
+        "b1b2c430-5d5e-4f43-9b66-d412c18a19ae",
+        "116a9acb-454d-422c-aff8-7e94b32342c3"
+      ],
+      "settings": {
+        "text-color": "dark",
+        "background-color": "none",
+        "spacing-above": false,
+        "spacing-below": false,
+        "spacing-around-blocks": false,
+        "image-height": 5,
+        "darken-image": false,
+        "blocks_per_slide": 1,
+        "blocks_per_slide_mobile": "1",
+        "box-around-text": true,
+        "mobile-overlay": false,
+        "auto-rotate": false,
+        "rotate-frequency": 7,
+        "transition_type": "slide"
+      }
+    },
+    "featured-collection-grid": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "gymnastics-gift-sets",
+        "background-color": "none",
+        "light-text": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "featured-collection--image--show": false,
+        "featured-collection--description--show": false,
+        "display-type": "slider",
+        "products-per-row--desktop": "3",
+        "products-per-row--mobile": "1"
+      }
+    },
+    "featured-text": {
+      "type": "featured-text",
+      "settings": {
+        "background-color": "dark",
+        "light-text": true,
+        "container-width": 2,
+        "spacing-above": true,
+        "spacing-below": true,
+        "overline": "",
+        "heading": "Destira was born from Love.",
+        "text": "<p>We help girls express themselves by producing an apparel line that’s high quality, super comfy and as unique as each athlete who chooses us. <\/p><p>Family- and women-owned, Destira is designed, produced and celebrated in the USA. <\/p>"
+      }
+    },
+    "featured-video": {
+      "type": "featured-video",
+      "settings": {
+        "video-url": "https:\/\/www.youtube.com\/watch?v=IYUN0W2vx50",
+        "full-width": true,
+        "background-color": "light",
+        "section-height": "regular",
+        "light-text": true,
+        "darken-video": true,
+        "heading": "",
+        "sub-heading": "",
+        "button-text": "",
+        "button-url": "shopify:\/\/pages\/about-destira"
+      }
+    },
+    "text-columns": {
+      "type": "text-columns",
+      "blocks": {
+        "text-below-block-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "show-image": true,
+            "image": "shopify:\/\/shop_images\/2022-10-social-post-ohsugar-group-1_0a3b865b-135a-48c6-9231-464dd6f3e947.jpg",
+            "title": "Oh, Sugar!",
+            "description": "<p>Sweet styles you'll flip for!<\/p>",
+            "link-url": "shopify:\/\/collections\/oh-sugar",
+            "link-text": "SHOP NOW"
+          }
+        },
+        "79f0b948-9e27-4c04-bb21-5e18e9bcfedb": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify:\/\/shop_images\/destira-1399.jpg",
+            "title": "Matching Doll Sets",
+            "description": "<p>Pair your gymnast's leotard with a matching doll size leo.<\/p>",
+            "link-url": "shopify:\/\/collections\/matching-doll-sets",
+            "link-text": "SHOP NOW"
+          }
+        },
+        "text-below-block-0": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify:\/\/shop_images\/2022-10-social-post-aspire-1.jpg",
+            "title": "Power Up",
+            "description": "<p>Become invincible at every practice.<\/p>",
+            "link-url": "https:\/\/destira.com\/collections\/power-up",
+            "link-text": "SHOP NOW"
+          }
+        },
+        "text-below-block-2": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify:\/\/shop_images\/2022-10-social-post-waddlewonderland-1.jpg",
+            "title": "Wonderland Winter",
+            "description": "<p>Cozy leotards for your aspiring gymnast.<\/p>",
+            "link-url": "shopify:\/\/collections\/wonderland",
+            "link-text": "SHOP NOW"
+          }
+        },
+        "text-below-block-3": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify:\/\/shop_images\/2022-09-social-post-goalgetter-1.jpg",
+            "title": "Confident in Camo",
+            "description": "<p>Show your strength at the gym.<\/p>",
+            "link-url": "shopify:\/\/collections\/confident-in-camo",
+            "link-text": "SHOP NOW"
+          }
+        }
+      },
+      "block_order": [
+        "text-below-block-1",
+        "79f0b948-9e27-4c04-bb21-5e18e9bcfedb",
+        "text-below-block-0",
+        "text-below-block-2",
+        "text-below-block-3"
+      ],
+      "settings": {
+        "background-color": "light",
+        "light-text": false,
+        "block-spacing": true,
+        "container-width": 5,
+        "spacing-above": true,
+        "spacing-below": true,
+        "width": 4,
+        "image-width": 0,
+        "mobile-width": "2",
+        "text-alignment": "center",
+        "heading": "Gifts for Every Gymnast",
+        "subtitle": "",
+        "link-url": "shopify:\/\/collections\/all",
+        "link-text": ""
+      }
+    },
+    "4738644a-1fad-4634-a717-586108b93316": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "best-sellers",
+        "background-color": "dark",
+        "light-text": true,
+        "spacing-above": true,
+        "spacing-below": true,
+        "featured-collection--image--show": false,
+        "featured-collection--description--show": true,
+        "display-type": "slider",
+        "products-per-row--desktop": "4",
+        "products-per-row--mobile": "2"
+      }
+    },
+    "1640170917ff79e864": {
+      "type": "featured-product",
+      "disabled": true,
+      "blocks": {
+        "1640170917806de03a-0": {
+          "type": "overline",
+          "settings": {
+            "text": "Overline text"
+          }
+        },
+        "1640170917806de03a-1": {
+          "type": "heading",
+          "settings": {
+          }
+        },
+        "1640170917806de03a-2": {
+          "type": "vendor",
+          "settings": {
+          }
+        },
+        "1640170917806de03a-3": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "1640170917806de03a-4": {
+          "type": "options",
+          "settings": {
+            "variant-style": "buttons",
+            "swatches-enabled": true,
+            "size-chart-enabled": true,
+            "size-chart-option": "size",
+            "size-chart-content": ""
+          }
+        },
+        "1640170917806de03a-5": {
+          "type": "buy-buttons",
+          "settings": {
+            "smart-payment-enabled": true
+          }
+        }
+      },
+      "block_order": [
+        "1640170917806de03a-0",
+        "1640170917806de03a-1",
+        "1640170917806de03a-2",
+        "1640170917806de03a-3",
+        "1640170917806de03a-4",
+        "1640170917806de03a-5"
+      ],
+      "settings": {
+        "background-color": "none",
+        "container-width": 1,
+        "spacing-above": true,
+        "spacing-below": false,
+        "featured_product": "one-of-a-kind-leotard",
+        "loop-enabled": false
+      }
+    },
+    "featured-blog": {
+      "type": "featured-blog",
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 4,
+        "spacing-above": true,
+        "spacing-below": true,
+        "blog-heading": "Here's what's going on!",
+        "blog": "news",
+        "tag-select": "pinned",
+        "show-date": true,
+        "show-excerpt": true,
+        "view-more-text": "View more"
+      }
+    },
+    "16485655788ebc33dc": {
+      "type": "custom-content",
+      "settings": {
+        "custom_html": "<div><h1 style=\"text-align:center\">Gymnastics Leotards<\/h1><\/div>\n<div class=\"article--content\"><p>At Destira, we offer comfortable, high-quality gymnastics leotards that encourage young athletes to express themselves. Browse our website to find durable, ultra-comfortable wholesale gymnastics team apparel and gymnastics practice outfits. Our brand is dedicated to providing strong, comfortable, high-quality gymnastics apparel that allows young athletes to practice and perform with confidence. Soft, breathable fabric; empowering designs; and comfortable styles are all factors that make Destira one of the popular gymnastics leotard brands for practice and performance.<\/p><\/div>\n<div class=\"article--content\"><p>With Destira gymnastics leotards, your athletes will have the confidence to take on any routine at any time. And purchasing gymnastics apparel from Destira has never been easier. All you need to do is place the apparel you need in your cart and let us handle the rest!<\/p><\/div>"
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
+        "background-color": "dark",
+        "light-text": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "heading": "We've got a gift for you!",
+        "newsletter--subheading": "<p>Be the first to know about new arrivals and promotions. Plus, get 15% off your first order!<\/p>"
+      }
+    },
+    "1640171389ee0b18f2": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "text-color": "auto",
+        "background-color": "none",
+        "container-width": 6,
+        "spacing-above": false,
+        "spacing-below": false,
+        "image-height": 3,
+        "darken-image": true,
+        "parallax-enabled": false,
+        "text-position": "center",
+        "text-width": "small",
+        "overlap": false,
+        "box-around-text": true,
+        "mobile-overlay": true,
+        "overline": "Overline text",
+        "title": "Image with text",
+        "description": "<p>Combine imagery with text to create stand-out campaign sections, eye-catching promotions, information blocks and more.<\/p>",
+        "link-url": "",
+        "link-text": ""
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "featured-collection-grid",
+    "featured-text",
+    "featured-video",
+    "text-columns",
+    "4738644a-1fad-4634-a717-586108b93316",
+    "1640170917ff79e864",
+    "featured-blog",
+    "16485655788ebc33dc",
+    "newsletter",
+    "1640171389ee0b18f2"
+  ]
+}

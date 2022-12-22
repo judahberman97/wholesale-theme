@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="{{ locale }}" dir="{{ direction }}" class="{{ checkout_html_classes }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, user-scalable=0">
+    <meta name="referrer" content="origin">
+
+    <title>{{ page_title }}</title>
+    {{ content_for_header }}
+
+    {{ checkout_stylesheets }}
+    {{ checkout_scripts }}
+    
+    {% if customer.tags contains 'wholesale' %}
+      <style>
+
+        [data-alternative-payments]{
+          display: none!important
+        }
+      </style>
+      {% endif %}
+    <style>
+      .sidebar::after{
+
+        background: #fff
+      }
+@media (min-width: 1000px) {
+    .order-summary__sections {
+        display:-webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: auto;
+        width: 100%
+    }}
+    </style>
+    <script>
+        var moneyFormat = '{% raw %}${{amount}}{% endraw %}'; // eslint-disable-line camelcase
+  function formatMoney(cents, format) {
+    if (typeof cents === 'string') {
+      cents = cents.replace('.', '');
+    }
+    var value = '';
+    var placeholderRegex = /\{\{\s*(\w+)\s*\}\}/;
+    var formatString = format || moneyFormat;
+
+    function formatWithDelimiters(number, precision, thousands, decimal) {
+      thousands = thousands || ',';
+      decimal = decimal || '.';
+
+      if (isNaN(number) || number === null) {
+        return 0;
+      }
+
+      number = (number / 100.0).toFixed(precision);
+
+      var parts = number.split('.');
+      var dollarsAmount = parts[0].replace(
+        /(\d)(?=(\d\d\d)+(?!\d))/g,
+        '$1' + thousands
+      );
+      var centsAmount = parts[1] ? decimal + parts[1] : '';
+
+      return dollarsAmount + centsAmount;
+    }
+
+    switch (formatString.match(placeholderRegex)[1]) {
+      case 'amount':
+        value = formatWithDelimiters(cents, 2);
+        break;
+      case 'amount_no_decimals':
+        value = formatWithDelimiters(cents, 0);
+        break;
+      case 'amount_with_comma_separator':
+        value = formatWithDelimiters(cents, 2, '.', ',');
+        break;
+      case 'amount_no_decimals_with_comma_separator':
+        value = formatWithDelimiters(cents, 0, '.', ',');
+        break;
+      case 'amount_no_decimals_with_space_separator':
+        value = formatWithDelimiters(cents, 0, ' ');
+        break;
+      case 'amount_with_apostrophe_separator':
+        value = formatWithDelimiters(cents, 2, "'");
+        break;
+    }
+
+    return formatString.replace(placeholderRegex, value);
+  }
+    </script>
+  </head>
+  <body>
+    {{ skip_to_content_link }}
+
+    <header class="banner" data-header role="banner">
+      <div class="wrap">
+        {{ content_for_logo }}
+      </div>
+    </header>
+
+    {{ order_summary_toggle }}
+    <div class="content" data-content>
+      <div class="wrap">
+        <div class="main">
+          <header class="main__header" role="banner">
+            {{ content_for_logo }}
+            {{ breadcrumb }}
+            {{ alternative_payment_methods }}
+          </header>
+          <main class="main__content" role="main">
+            {{ content_for_layout }}
+          </main>
+          <footer class="main__footer" role="contentinfo">
+            {{ content_for_footer }}
+          </footer>
+        </div>
+        <aside class="sidebar" role="complementary">
+          <div class="sidebar__header">
+            {{ content_for_logo }}
+          </div>
+          <div class="sidebar__content">
+          {% section 'checkout-countdown' %}
+            
+            {{ content_for_order_summary }}
+          </div>
+          {% section 'checkout-banner' %}
+        </aside>
+      </div>
+    </div>
+
+    {{ tracking_code }}
+    {% section 'upsell-checkout' %}
+    
+  </body>
+</html>
